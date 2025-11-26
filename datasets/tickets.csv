@@ -1,1 +1,1 @@
-
+ticket_id,creator_id,email_id,type,title,description,priority,status,created_by,assigned_to,created_datetime_utc,updated_datetime_utc,due_datetime_utc,resolution_notes
