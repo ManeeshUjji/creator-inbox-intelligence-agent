@@ -1,1 +1,1 @@
-
+email_id,thread_id,creator_id,from_name,from_email,to_email,subject,body_text,received_datetime_utc,raw_source,category,priority,status,assigned_to,last_action,last_action_datetime_utc,ticket_id,notes
