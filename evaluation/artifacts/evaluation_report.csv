@@ -1,6 +1,6 @@
 email_id,true_category,true_priority,pred_category,pred_priority,kb_used,reply_text,latency_sec
-1,Brand/Sponsorship – New Inquiry,P1,,,[],,0.212785005569458
-2,Creator Collaboration,P2,,,[],,0.18526935577392578
-3,Platform / Account Notifications,P2,,,[],,0.11085677146911621
-4,PR / Media / Interviews,P1,,,[],,0.21204614639282227
-5,Other / Uncategorized,P3,,,[],,0.11268973350524902
+1,Brand/Sponsorship – New Inquiry,P1,,,[],,0.1940147876739502
+2,Creator Collaboration,P2,,,[],,0.1168060302734375
+3,Platform / Account Notifications,P2,,,[],,0.05178189277648926
+4,PR / Media / Interviews,P1,,,[],,0.08446025848388672
+5,Other / Uncategorized,P3,,,[],,0.13910341262817383
