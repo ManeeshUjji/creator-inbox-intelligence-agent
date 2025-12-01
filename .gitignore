@@ -1,1 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
 
+# VS Code
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# Credentials
+*.env
+.env
+config.json
+secrets.json
+
+# Model artifacts
+evaluation/
+evaluation/artifacts/
+*.jsonl
+
+# OS files
+.DS_Store
+Thumbs.db
