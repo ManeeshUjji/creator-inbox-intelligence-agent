@@ -1,30 +1,30 @@
 email_id,thread_id,creator_id,from_name,from_email,to_email,subject,body_text,received_datetime_utc,raw_source,category,priority,status,assigned_to,last_action,last_action_datetime_utc,ticket_id,notes
-1,1001,creator_01,Emma Lopez,emma.brand@prismmarketing.com,creator@email.com,Partnership Opportunity with Prism Marketing,Hi! We love your content and want to discuss a paid collaboration for our new product launch.,2025-01-14T18:22:10Z,raw_email_source_1,Brand/Sponsorship – New Inquiry,P1,open,unassigned,draft_reply,2025-12-01T02:09:44.664041Z,,"Hi Emma Lopez,
+1,1001,creator_01,Emma Lopez,emma.brand@prismmarketing.com,creator@email.com,Partnership Opportunity with Prism Marketing,Hi! We love your content and want to discuss a paid collaboration for our new product launch.,2025-01-14T18:22:10Z,raw_email_source_1,Brand/Sponsorship – New Inquiry,P1,open,unassigned,draft_reply,2025-12-01T02:15:59.769518Z,,"Hi Emma Lopez,
 
 Thank you for reaching out and thinking of us for this campaign! (based on our internal guidelines: Email Reply – New Brand Inquiry Template)
 
 We'd love to learn more about the product, timeline, deliverables, and budget for this coll"
-2,1002,creator_01,David Chen,david.chen@creatorsunite.co,creator@email.com,Collab Inquiry,Huge fan of your work! Want to co-create a short-form content series?,2025-01-13T20:10:44Z,raw_email_source_2,Creator Collaboration,P2,open,unassigned,draft_reply,2025-12-01T02:09:44.728915Z,,"Hi David Chen,
+2,1002,creator_01,David Chen,david.chen@creatorsunite.co,creator@email.com,Collab Inquiry,Huge fan of your work! Want to co-create a short-form content series?,2025-01-13T20:10:44Z,raw_email_source_2,Creator Collaboration,P2,open,unassigned,draft_reply,2025-12-01T02:15:59.817834Z,,"Hi David Chen,
 
 Thanks for reaching out about a collaboration! (based on our internal guidelines: Creator Collaboration Guidelines)
 
 Your idea sounds interesting. Could you please share:
 - The concept you have in mind
 - Platforms you’d like to collab"
-3,1003,creator_01,Meta Support,no-reply@meta.com,creator@email.com,Your Instagram Account Verification Status,Your verification badge review is complete. Please log in for more details.,2025-01-12T09:31:55Z,raw_email_source_3,Platform / Account Notifications,P2,open,system,draft_reply,2025-12-01T02:09:44.773503Z,,"Hi Meta Support,
+3,1003,creator_01,Meta Support,no-reply@meta.com,creator@email.com,Your Instagram Account Verification Status,Your verification badge review is complete. Please log in for more details.,2025-01-12T09:31:55Z,raw_email_source_3,Platform / Account Notifications,P2,open,system,draft_reply,2025-12-01T02:15:59.851549Z,,"Hi Meta Support,
 
 Thanks for the update regarding the account. (based on our internal guidelines: Email Reply – New Brand Inquiry Template)
 
 We’ve reviewed the notification and will follow the recommended steps on our side. 
 If there are any actions "
-4,1004,creator_01,Sarah Mills,sarah@brightpr.io,creator@email.com,Interview Request for BrightPR,We’re interviewing rising creators for a digital media feature. Interested?,2025-01-11T14:47:28Z,raw_email_source_4,PR / Media / Interviews,P1,open,unassigned,draft_reply,2025-12-01T02:09:44.826970Z,,"Hi Sarah Mills,
+4,1004,creator_01,Sarah Mills,sarah@brightpr.io,creator@email.com,Interview Request for BrightPR,We’re interviewing rising creators for a digital media feature. Interested?,2025-01-11T14:47:28Z,raw_email_source_4,PR / Media / Interviews,P1,open,unassigned,draft_reply,2025-12-01T02:15:59.887450Z,,"Hi Sarah Mills,
 
 Thank you for the media / interview request! (based on our internal guidelines: Press/Media Interview Requirements)
 
 This sounds exciting. Please share:
 - The outlet and format (article, podcast, video, etc.)
 - Estimated recording / "
-5,1005,creator_01,Unknown Sender,spam@randomoffers.biz,creator@email.com,CLAIM YOUR FREE GIFT CARD,Click here to win a $500 Walmart gift card!,2025-01-10T02:10:03Z,raw_email_source_5,Other / Uncategorized,P3,ignored,unassigned,draft_reply,2025-12-01T02:09:44.920403Z,,"Hi Unknown Sender,
+5,1005,creator_01,Unknown Sender,spam@randomoffers.biz,creator@email.com,CLAIM YOUR FREE GIFT CARD,Click here to win a $500 Walmart gift card!,2025-01-10T02:10:03Z,raw_email_source_5,Other / Uncategorized,P3,ignored,unassigned,draft_reply,2025-12-01T02:15:59.935476Z,,"Hi Unknown Sender,
 
 Thank you for reaching out! (based on our internal guidelines: Brand Collaboration – Rate Card)
 

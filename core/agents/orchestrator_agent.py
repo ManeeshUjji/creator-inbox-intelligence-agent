@@ -139,33 +139,45 @@ class OrchestratorAgent:
         current_email = next(e for e in thread_emails if e.email_id == email_id)
         return current_email, thread_emails
 
-    def process_email_with_timings(self, email_id):
+    def process_email_with_timings(self, email_id: int):
       """
-      Same as process_email, but returns timing info for key stages.
+      Same as process_email, but also returns timing info
+      for triage, kb_search, reply, and full pipeline.
       """
       timings = {}
 
-      t_start = time.time()
-      # triage
+      full_start = time.time()
+
+      # Load email + thread
+      email, thread_emails = self._load_email_and_thread(email_id)
+
+      # 1) TRIAGE
       t0 = time.time()
-      triage_out = self.triage_agent.classify(self.load_email(email_id))
+      triage_result: TriageResult = self.triage_agent.run(email)
       t1 = time.time()
       timings["triage"] = t1 - t0
 
-      # kb search
+      # 2) KB SEARCH
       t2 = time.time()
-      kb_out = self.kb_agent.search_kb(triage_out)
+      kb_context: KBContext = self.kb_agent.run(email, triage_result, thread_emails)
       t3 = time.time()
       timings["kb_search"] = t3 - t2
 
-      # reply agent
-      reply_out = self.reply_agent.generate_reply(triage_out, kb_out)
+      # 3) REPLY
+      t4 = time.time()
+      reply_result: ReplyResult = self.reply_agent.run(
+          email, triage_result, kb_context, thread_emails
+      )
+      t5 = time.time()
+      timings["reply"] = t5 - t4
 
-      # final time
-      t_end = time.time()
+      # 4) OPTIONAL TICKET
+      self._maybe_log_ticket(reply_result)
 
-      # Return same structure as normal plus timings
-      return reply_out, timings
+      full_end = time.time()
+      timings["full"] = full_end - full_start
+
+      return reply_result, timings
 
     def _maybe_log_ticket(self, reply_result: ReplyResult):
         action = reply_result.follow_up_action
