@@ -37,6 +37,7 @@ class OrchestratorAgent:
 
     # ------------------ PUBLIC ------------------
     def process_email(self, email_id: int) -> ReplyResult:
+
         logger.info(f"Processing email_id={email_id}")
 
         email, thread_emails = self._load_email_and_thread(email_id)
@@ -135,6 +136,34 @@ class OrchestratorAgent:
 
         current_email = next(e for e in thread_emails if e.email_id == email_id)
         return current_email, thread_emails
+
+    def process_email_with_timings(self, email_id):
+      """
+      Same as process_email, but returns timing info for key stages.
+      """
+      timings = {}
+
+      t_start = time.time()
+      # triage
+      t0 = time.time()
+      triage_out = self.triage_agent.classify(self.load_email(email_id))
+      t1 = time.time()
+      timings["triage"] = t1 - t0
+
+      # kb search
+      t2 = time.time()
+      kb_out = self.kb_agent.search_kb(triage_out)
+      t3 = time.time()
+      timings["kb_search"] = t3 - t2
+
+      # reply agent
+      reply_out = self.reply_agent.generate_reply(triage_out, kb_out)
+
+      # final time
+      t_end = time.time()
+
+      # Return same structure as normal plus timings
+      return reply_out, timings
 
     def _maybe_log_ticket(self, reply_result: ReplyResult):
         action = reply_result.follow_up_action

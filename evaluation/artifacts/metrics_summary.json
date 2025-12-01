@@ -1,0 +1,14 @@
+{
+  "n_samples": 5,
+  "category_metrics": {
+    "accuracy": 0.0,
+    "precision_macro": 0.0,
+    "recall_macro": 0.0,
+    "f1_macro": 0.0
+  },
+  "priority_metrics": {
+    "weighted_accuracy": 0.1,
+    "macro_f1_priority": 0.0,
+    "avg_distance_penalty": 2.2
+  }
+}
